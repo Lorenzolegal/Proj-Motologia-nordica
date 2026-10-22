@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+
+/* =========================================
+   CONFIGURAÇÕES GERAIS
+   ========================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #d8d8d8;
+
+    font-family: Arial, sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+
+/* =========================================
+   MENU DE NAVEGAÇÃO (ESTILO ABAS GOOGLE)
+   ========================================= */
+
+.nav-principal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+    margin: 20px 0 35px 0;
+    border-bottom: 1px solid #30383b;
+    padding: 0 10px;
+    flex-wrap: wrap;
+}
+
+.link-nav {
+    color: #888f92;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 8px 6px 12px 6px;
+    position: relative;
+    background: transparent;
+    border: none;
+    transition: color 0.2s ease;
+}
+
+.link-nav:hover {
+    color: #d9e4e6;
+}
+
+/* Aba selecionada / ativa com o risco embaixo */
+.link-nav.ativo {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.link-nav.ativo::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background-color: #c9d2d5;
+    border-radius: 3px 3px 0 0;
+}
+
+
+/* =========================================
+   TÍTULOS
+   ========================================= */
+
+h1 {
+    text-align: center;
+
+    font-size: 56px;
+
+    margin-top: 40px;
+    margin-bottom: 10px;
+
+    font-family: 'UnifrakturCook', serif;
+
+    color: #d6d6d6;
+
+    text-shadow: 2px 2px 0 #111111;
+}
+
+h2 {
+    font-size: 30px;
+
+    font-family: 'UnifrakturCook', serif;
+
+    margin-top: 0;
+
+    color: #c9d2d5;
+}
+
+h3 {
+    font-size: 22px;
+
+    font-family: 'UnifrakturCook', serif;
+
+    margin-top: 25px;
+
+    color: #b9c5c8;
+}
+
+
+/* =========================================
+   TEXTOS
+   ========================================= */
+
+p,
+li {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    text-align: justify;
+}
+
+strong {
+    color: #eeeeee;
+}
+
+.subtitulo {
+    text-align: center;
+
+    color: #888f92;
+
+    font-size: 18px;
+
+    margin-bottom: 40px;
+}
+
+.autor {
+    text-align: center;
+
+    font-size: 18px;
+
+    color: #888888;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================
+   CONTAINER
+   ========================================= */
+
+.conteudo {
+    width: 85%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   TEXTOS PRINCIPAIS
+   ========================================= */
+
+.introducao,
+.secao,
+.destaque {
+    background: transparent;
+
+    border: none;
+
+    padding: 0;
+
+    margin-bottom: 40px;
+}
+
+.secao:hover {
+    background: transparent;
+
+    transform: none;
+}
+
+
+/* =========================================
+   BOTÕES
+   ========================================= */
+
+.botoes {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 14px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+.botoes a {
+    display: inline-block;
+
+    background-color: #15191b;
+
+    color: #c8d0d2;
+
+    border: 1px solid #465257;
+
+    padding: 12px 24px;
+
+    font-size: 18px;
+
+    font-family: 'UnifrakturCook', serif;
+
+    text-decoration: none;
+
+    border-radius: 3px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.botoes a:hover {
+    background-color: #29373c;
+
+    color: #e5edef;
+
+    border-color: #71858b;
+}
+
+
+/* =========================================
+   CASO AINDA USE BUTTON
+   ========================================= */
+
+.botoes button {
+    background-color: #15191b;
+
+    color: #c8d0d2;
+
+    border: 1px solid #465257;
+
+    padding: 12px 24px;
+
+    font-size: 18px;
+
+    font-family: 'UnifrakturCook', serif;
+
+    cursor: pointer;
+
+    border-radius: 3px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.botoes button:hover {
+    background-color: #29373c;
+
+    color: #e5edef;
+
+    border-color: #71858b;
+}
+
+
+/* =========================================
+   BOTÃO VOLTAR
+   ========================================= */
+
+.voltar {
+    text-align: center;
+
+    margin: 50px 0;
+}
+
+.voltar a {
+    display: inline-block;
+
+    color: #c8d0d2;
+
+    text-decoration: none;
+
+    border: 1px solid #465257;
+
+    background-color: #15191b;
+
+    padding: 12px 24px;
+
+    border-radius: 3px;
+
+    font-family: 'UnifrakturCook', serif;
+
+    font-size: 18px;
+
+    transition:
+        background-color 0.2s ease,
+        color 0.2s ease,
+        border-color 0.2s ease;
+}
+
+.voltar a:hover {
+    background-color: #29373c;
+
+    color: #ffffff;
+
+    border-color: #71858b;
+}
+
+
+/* =========================================
+   IMAGENS
+   ========================================= */
+
+.imagem-esquerda {
+    float: left;
+
+    width: 220px;
+
+    height: auto;
+
+    margin: 5px 25px 20px 0;
+
+    border-radius: 3px;
+
+    border: 1px solid #3b4548;
+}
+
+
+/* =========================================
+   LIMPA FLOAT
+   ========================================= */
+
+.conteudo::after {
+    content: "";
+
+    display: table;
+
+    clear: both;
+}
+
+
+/* =========================================
+   GRADE DOS SÍMBOLOS
+   ========================================= */
+
+.grade-simbolos {
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 15px;
+
+    margin-bottom: 50px;
+}
+
+.card-simbolo {
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 20px 10px;
+
+    background-color: #15191b;
+
+    border: 1px solid #465257;
+
+    border-radius: 3px;
+
+    color: #c8d0d2;
+
+    text-decoration: none;
+
+    transition:
+        background-color 0.2s ease,
+        border-color 0.2s ease,
+        transform 0.2s ease;
+}
+
+.card-simbolo span {
+    font-size: 32px;
+
+    margin-bottom: 8px;
+
+    color: #91a8ad;
+}
+
+.card-simbolo strong {
+    font-family: 'UnifrakturCook', serif;
+
+    font-size: 18px;
+
+    text-align: center;
+
+    color: #c8d0d2;
+}
+
+.card-simbolo:hover {
+    background-color: #29373c;
+
+    border-color: #71858b;
+
+    transform: translateY(-3px);
+}
+
+.card-simbolo:hover strong {
+    color: #ffffff;
+}
+
+
+/* =========================================
+   LINHAS
+   ========================================= */
+
+hr {
+    border: none;
+
+    border-top: 1px solid #30383b;
+
+    margin: 35px 0;
+}
+
+
+/* =========================================
+   CITAÇÕES
+   ========================================= */
+
+blockquote {
+    margin: 25px 0;
+
+    padding: 10px 20px;
+
+    color: #aeb7b9;
+
+    border-left: 3px solid #53666b;
+
+    font-style: italic;
+}
+
+
+/* =========================================
+   LINKS
+   ========================================= */
+
+a {
+    color: #aebfc3;
+}
+
+a:hover {
+    color: #d9e4e6;
+}
+
+
+/* =========================================
+   CELULAR
+   ========================================= */
+
+@media (max-width: 600px) {
+
+    h1 {
+        font-size: 40px;
+
+        margin-top: 30px;
+    }
+
+    h2 {
+        font-size: 27px;
+    }
+
+    .conteudo {
+        width: 90%;
+    }
+
+    .imagem-esquerda {
+        float: none;
+
+        display: block;
+
+        margin: 0 auto 20px auto;
+
+        width: 100%;
+
+        max-width: 260px;
+    }
+
+    .nav-principal {
+        gap: 15px;
+    }
+
+    .link-nav {
+        font-size: 14px;
+        padding-bottom: 8px;
+    }
+
+    .botoes {
+        gap: 10px;
+    }
+
+    .botoes a,
+    .botoes button {
+        width: 100%;
+
+        text-align: center;
+    }
+}

@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Runas Nórdicas - O Alfabeto Sagrado</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .bloco-runa {
+            background-color: transparent;
+            border: none;
+            padding: 10px 0;
+            margin-bottom: 35px;
+            border-bottom: 1px solid #222222;
+        }
+        .bloco-runa h3 {
+            font-size: 2rem;
+            color: #ffffff;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .bloco-runa .simbolo-destaque {
+            font-size: 2.5rem;
+            color: #d8d8d8;
+        }
+        .voltar-topo {
+            display: inline-block;
+            margin-top: 10px;
+            color: #888888;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+        .voltar-topo:hover {
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Runas Nórdicas</h1>
+    <p class="subtitulo">O Alfabeto Sagrado e os Mistérios do Elder Futhark</p>
+
+    <!-- Menu em estilo abas -->
+    <nav class="nav-principal">
+        <a href="index.html" class="link-nav">Início</a>
+        <a href="deuses.html" class="link-nav">Deuses</a>
+        <a href="monstros.html" class="link-nav">Monstros</a>
+        <a href="simbolismo.html" class="link-nav ativo">Símbolos</a>
+    </nav>
+
+    <div class="conteudo">
+
+        <div class="secao">
+            <h2>ᚱ O Sacrifício de Odin e o Oráculo das Runas</h2>
+            <p>
+                Na tradição nórdica, as <strong>Runas</strong> não eram apenas um sistema de escrita, mas símbolos sagrados de imenso poder mágico e divinatório.
+            </p>
+            <p>
+                Para obter a sabedoria secreta das runas, o deus <strong>Odin</strong> pendurou-se de cabeça para baixo na árvore sagrada <strong>Yggdrasil</strong> por nove dias e nove noites, transpassado pela própria lança, até que os segredos do cosmos fossem revelados.
+            </p>
+        </div>
+
+        <hr>
+
+        <h2 id="grade-runas">ᛓ Clique em uma Runa para ler seu significado</h2>
+
+        <!-- Grade de atalhos para todas as runas -->
+        <div class="grade-simbolos">
+            <a href="#fehu" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚠ</span>
+                <strong>Fehu</strong>
+                <small>Riqueza & Abundância</small>
+            </a>
+
+            <a href="#uruz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚢ</span>
+                <strong>Uruz</strong>
+                <small>Força & Vitalidade</small>
+            </a>
+
+            <a href="#thurisaz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚦ</span>
+                <strong>Thurisaz</strong>
+                <small>Proteção & Desafio</small>
+            </a>
+
+            <a href="#ansuz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚨ</span>
+                <strong>Ansuz</strong>
+                <small>Sabedoria & Mensagem</small>
+            </a>
+
+            <a href="#raidho" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚱ</span>
+                <strong>Raidho</strong>
+                <small>Jornada & Evolução</small>
+            </a>
+
+            <a href="#kenaz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚲ</span>
+                <strong>Kenaz</strong>
+                <small>Chama & Conhecimento</small>
+            </a>
+
+            <a href="#gebo" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚷ</span>
+                <strong>Gebo</strong>
+                <small>Presente & União</small>
+            </a>
+
+            <a href="#wunjo" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚹ</span>
+                <strong>Wunjo</strong>
+                <small>Alegria & Harmonia</small>
+            </a>
+
+            <a href="#hagalaz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚺ</span>
+                <strong>Hagalaz</strong>
+                <small>Transformação & Tempestade</small>
+            </a>
+
+            <a href="#nauthiz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᚾ</span>
+                <strong>Nauthiz</strong>
+                <small>Resistência & Necessidade</small>
+            </a>
+
+            <a href="#isa" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᛁ</span>
+                <strong>Isa</strong>
+                <small>Pausa & Concentração</small>
+            </a>
+
+            <a href="#sowilo" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᛋ</span>
+                <strong>Sowilo</strong>
+                <small>Vitória & Luz Solar</small>
+            </a>
+
+            <a href="#tiwaz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᛏ</span>
+                <strong>Tiwaz</strong>
+                <small>Justiça & Honra</small>
+            </a>
+
+            <a href="#algiz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᛉ</span>
+                <strong>Algiz</strong>
+                <small>Escudo Divino</small>
+            </a>
+
+            <a href="#dagaz" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᛞ</span>
+                <strong>Dagaz</strong>
+                <small>Novo Amanhecer</small>
+            </a>
+
+            <a href="#othala" class="card-simbolo">
+                <span style="font-size: 2.5rem;">ᛟ</span>
+                <strong>Othala</strong>
+                <small>Ancestralidade & Lar</small>
+            </a>
+        </div>
+
+        <hr>
+
+        <h2>📖 Detalhes das Runas</h2>
+
+        <!-- Explicações detalhadas das Runas em texto corrido -->
+        
+        <div id="fehu" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚠ</span> Fehu — Riqueza e Abundância</h3>
+            <p><strong>Significado Literal:</strong> Gado / Prosperidade Material.</p>
+            <p>
+                Fehu representa os bens conquistados, a abundância, a circulação de energia e a recompensa pelo trabalho duro. Na sociedade nórdica, o gado era a maior métrica de riqueza.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="uruz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚢ</span> Uruz — Força Selvagem e Saúde</h3>
+            <p><strong>Significado Literal:</strong> Uro (Boi Selvagem Extinto).</p>
+            <p>
+                Uruz simboliza a força física indomável, a vitalidade, a coragem e a capacidade de superar doenças ou obstáculos difíceis através da perseverança.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="thurisaz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚦ</span> Thurisaz — Espinho e Proteção</h3>
+            <p><strong>Significado Literal:</strong> Gigante / Espinho.</p>
+            <p>
+                Representa a força defensiva reativa, a energia de Thor e seu martelo Mjölnir. É uma runa de aviso para tomar cuidado antes de agir e proteger-se contra forças destrutivas.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="ansuz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚨ</span> Ansuz — Sabedoria e Inspiração Divina</h3>
+            <p><strong>Significado Literal:</strong> Deus / Odin.</p>
+            <p>
+                Ligada diretamente a Odin, Ansuz traz a comunicação clara, a sabedoria ancestral, a poesia, a verdade e os conselhos vindos de fontes superiores.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="raidho" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚱ</span> Raidho — A Jornada e o Destino</h3>
+            <p><strong>Significado Literal:</strong> Carruagem / Viagem.</p>
+            <p>
+                Simboliza tanto as viagens físicas quanto as jornadas espirituais. Refere-se a manter o ritmo, respeitar a ordem natural das coisas e tomar o controle do próprio caminho.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="kenaz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚲ</span> Kenaz — A Tocha da Iluminação</h3>
+            <p><strong>Significado Literal:</strong> Tocha / Ferida que Cura.</p>
+            <p>
+                Kenaz é a luz do conhecimento que dissipa a escuridão da ignorância. Representa a criatividade, a visão clara, a inspiração artística e o aprendizado técnico.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="gebo" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚷ</span> Gebo — A Troca e a Aliança</h3>
+            <p><strong>Significado Literal:</strong> Presente / Generosidade.</p>
+            <p>
+                Representa os pactos, parcerias e trocas de presentes que fortalecem laços sociais e espirituais. Lembra a máxima nórdica: "um presente sempre espera outro presente em retribuição".
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="wunjo" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚹ</span> Wunjo — Alegria e Harmonia</h3>
+            <p><strong>Significado Literal:</strong> Felicidade / Glória.</p>
+            <p>
+                Indica o triunfo após a tempestade, a convivência harmoniosa em clã, o sentimento de pertencimento, a paz de espírito e a satisfação pessoal.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="hagalaz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚺ</span> Hagalaz — Transformação & Tempestade</h3>
+            <p><strong>Significado Literal:</strong> Granizo / Ruptura.</p>
+            <p>
+                Representa mudanças drásticas, imprevistos e provações da natureza. Embora traga destruição temporária, Hagalaz limpa o caminho velho para que algo renovado e mais forte possa ser construído.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="nauthiz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᚾ</span> Nauthiz — Resistência & Necessidade</h3>
+            <p><strong>Significado Literal:</strong> Necessidade / Escassez.</p>
+            <p>
+                A runa do aprendizado através da dificuldade. Exige paciência, disciplina e força interior para lidar com limitações e superar momentos de escassez antes da libertação.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="isa" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᛁ</span> Isa — Pausa & Concentração</h3>
+            <p><strong>Significado Literal:</strong> Gelo / Imobilidade.</p>
+            <p>
+                Simboliza o congelamento dos planos e a necessidade de interromper ações apressadas. Isa convida à introspecção, esfriar os ânimos e aguardar o momento certo para voltar a agir.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="sowilo" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᛋ</span> Sowilo — Vitória & Luz Solar</h3>
+            <p><strong>Significado Literal:</strong> Sol / Triunfo.</p>
+            <p>
+                Uma runa de imensa energia positiva, clareza e sucesso. Representa a luz que ilumina o caminho, a força vital, a cura e a conquista plena dos objetivos.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="tiwaz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᛏ</span> Tiwaz — Justiça & Honra</h3>
+            <p><strong>Significado Literal:</strong> O Deus Tyr / Sacrifício.</p>
+            <p>
+                Associada ao deus Tyr, representa a liderança justa, a coragem moral, a honra inabalável e a disposição para fazer sacrifícios pessoais pelo bem-estar coletivo.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="algiz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᛉ</span> Algiz — Escudo Divino</h3>
+            <p><strong>Significado Literal:</strong> Alce / Proteção Divina.</p>
+            <p>
+                Uma das mais fortes runas de proteção e intuição. Funciona como um escudo espiritual que afasta o perigo, fortalece a conexão com o sagrado e protege o indivíduo contra males externos.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="dagaz" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᛞ</span> Dagaz — Novo Amanhecer</h3>
+            <p><strong>Significado Literal:</strong> Dia / Iluminação.</p>
+            <p>
+                Simboliza o despertar da consciência, o fim de um período de trevas e o início de um ciclo próspero. Representa transformações radicais para melhor e clareza mental.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div id="othala" class="bloco-runa">
+            <h3><span class="simbolo-destaque">ᛟ</span> Othala — Ancestralidade & Lar</h3>
+            <p><strong>Significado Literal:</strong> Herança / Terra Pátria.</p>
+            <p>
+                Representa as raízes familiares, o patrimônio acumulado, as tradições de nossos antepassados e o sentimento de segurança proporcionado pelo lar e pela comunidade.
+            </p>
+            <a href="#grade-runas" class="voltar-topo">↑ Voltar para a grade</a>
+        </div>
+
+        <div class="voltar">
+            <a href="index.html">← Voltar para a Página Inicial</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
