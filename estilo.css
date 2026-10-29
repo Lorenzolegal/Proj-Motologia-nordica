@@ -515,3 +515,38 @@ a:hover {
         text-align: center;
     }
 }
+
+.rodape {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 24px 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.rodape-conteudo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.rodape-links {
+  list-style: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+.rodape-links a {
+  color: #dddddd;
+  text-decoration: none;
+}
+
+.rodape-links a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
