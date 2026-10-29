@@ -517,7 +517,7 @@ a:hover {
 }
 
 .footer {
-  width: 100%;             /* Garante que o fundo ocupe tudo */
+  width: 90%;             /* Garante que o fundo ocupe tudo */
   background-color: #222;  
   color: #fff;
 }
@@ -525,5 +525,5 @@ a:hover {
 .footer-content {
   max-width: 1100px;       /* Limita a largura do texto/links */
   margin: 0 auto;          /* Centraliza o conteúdo na tela */
-  padding: 30px 20px;      /* Define a altura vertical (30px) e protege as laterais (20px) em telas de celular */
+  padding: 20px 10px;      /* Define a altura vertical (30px) e protege as laterais (20px) em telas de celular */
 }
