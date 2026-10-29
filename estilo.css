@@ -516,14 +516,28 @@ a:hover {
     }
 }
 
+/* IMPORTANTE: Remove as bordas/margens brancas padrão que o navegador cria nas laterais */
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .footer {
-  width: 90%;             /* Garante que o fundo ocupe tudo */
+  width: 100%;             /* Altera de 90% para 100% para encostar nas duas laterais */
   background-color: #222;  
   color: #fff;
 }
 
 .footer-content {
-  max-width: 1100px;       /* Limita a largura do texto/links */
-  margin: 0 auto;          /* Centraliza o conteúdo na tela */
-  padding: 20px 10px;      /* Define a altura vertical (30px) e protege as laterais (20px) em telas de celular */
+  width: 100%;             /* Garante que o conteúdo interno também use o espaço total */
+  margin: 0;               /* Remove a centralização antiga */
+  padding: 5px 20px;       /* Reduz o primeiro número (de 20px para 5px) para deixar o rodapé bem achatado/fino */
+}
+
+/* Remove a bolinha e as margens padrão da lista de links (e-mail) */
+.rodape-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
